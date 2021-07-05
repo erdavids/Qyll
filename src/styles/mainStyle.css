@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Solway&display=swap');
+
+@font-face {
+    font-family: Virgil;
+    src: url('../fonts/Virgil.woff2');
+}
+
+* {
+    /* font-family: 'Virgil'; */
+    font-family: 'Solway', serif;
+    font-size: 24px;
+}
+
+.fullStyle {
+    /* height: 70vh; */
+    padding: 82px;
+}
+
+body {
+    background-color:#F1E8E3;
+}
+
+.content {
+    /* background-color: #F1E8E3; */
+    color: #484848;
+    width: 98%;
+    margin: 0 auto;
+    height: 50%;
+    text-align: center;
+}
+
+.logo {
+    color: #E03857;
+    margin-bottom: 82px;
+}
+
+.qyll-title {
+    font-size: 4rem;
+    vertical-align: middle;
+    margin-left: 20px;
+}
+
+.logo-image {
+    vertical-align: middle;
+    width: 120px;
+    height: 120px;
+}
+
+.try-button {
+    border-radius: 8px;
+    border: none;
+    background-color: #E03857;
+    color: #f1e8e3;
+    height: 50px;
+    width: 140px;
+    cursor: pointer
+}
+
+.description {
+    margin-bottom: 82px;
+}
+
+@media (max-width: 720px) {
+    .qyll-title {
+        font-size: 3rem;
+    }
+
+    .logo-image {
+        width: 100px;
+        height: 100px;
+    }
+  }
