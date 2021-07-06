@@ -48,7 +48,7 @@ const Page = () => {
         <>
             <div class="page-content">
             <h1 class="page-logo">
-                <img class="page-logo-image" src={Logo} />
+                <img class="page-logo-image" alt="Qyll logo"  src={Logo} />
                 <span class="page-logo-title">Qyll</span>
             </h1>
             {/* <div class="page-center">
