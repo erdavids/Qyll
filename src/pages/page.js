@@ -30,7 +30,7 @@ const Page = () => {
     const inputEl = useRef(null);
 
     const onWritingClick = () => {
-        if (typeof(parseInt(text)) === 'number') {
+        if (text != "" && typeof(parseInt(text)) === 'number') {
             setWriting(true)
             setGoal(parseInt(text))
         }
@@ -62,7 +62,7 @@ const Page = () => {
                     {writing === true ?
                     <>
                         <h1 class="page-percent">{parseInt((typed.split(' ').length - 1) / goal * 100)}%</h1>
-                        <progress class="page-progress" value={value} max={10000} />
+                        <progress class="page-progress" value={(typed.split(' ').length - 1) / goal * 10000} max={10000} />
                             <textarea
                             class="page-word-input-hidden"
                             value={typed}
@@ -74,6 +74,7 @@ const Page = () => {
                             typed.split(' ').length - 1 >= goal ?
                             <>
                             <p class="page-text">You did it! Keep writing or use one of the options below to export your text.</p>
+                            <button class="write-button" onClick={() => {navigator.clipboard.writeText(typed)}}>Copy Text</button>
                             <button class="write-button" onClick={() => {navigator.clipboard.writeText(typed)}}>Copy Text</button>
 
 
@@ -95,7 +96,7 @@ const Page = () => {
 
                             <br />
                             <button class="write-button" onClick={() => onWritingClick()}>Start Writing</button>
-                            <p class="page-text">You can save your writing once you hit your goal.</p>
+                            <p class="page-text">You can export your writing once you hit your goal.</p>
                         </>
                     }
                 </div>
