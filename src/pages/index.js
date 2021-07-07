@@ -20,6 +20,7 @@ const IndexPage = () => {
         <title>Qyll</title>
       </Helmet>
       <Header />
+      {console.log(process.env.AUTH0_DOMAIN)}
       <div class="fullStyle">
         <div class="content">
           <h1 class="logo">
