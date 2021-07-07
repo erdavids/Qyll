@@ -52,7 +52,7 @@ const auth = isBrowser
         tokens.expiresAt = expiresAt
         user = authResult.idTokenPayload
         localStorage.setItem("isLoggedIn", true)
-        navigate("/account")
+        navigate("/")
         cb()
     }
     }
