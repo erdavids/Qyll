@@ -75,7 +75,7 @@ const Page = () => {
                             <>
                             <p class="page-text">You did it! Keep writing or use one of the options below to export your text.</p>
                             <button class="write-button" onClick={() => {navigator.clipboard.writeText(typed)}}>Copy Text</button>
-                            <button class="write-button" onClick={() => {navigator.clipboard.writeText(typed)}}>Copy Text</button>
+                            {/* <button class="write-button" onClick={() => {navigator.clipboard.writeText(typed)}}>Copy Text</button> */}
 
 
                             </>

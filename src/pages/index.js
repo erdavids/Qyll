@@ -20,7 +20,7 @@ const IndexPage = () => {
         <title>Qyll</title>
       </Helmet>
       <Header />
-      <p>Debugging but oh well {process.env.AUTH0_DOMAIN}</p>
+      {/* <p>Debugging but oh well {process.env.AUTH0_DOMAIN}</p> */}
       <div class="fullStyle">
         <div class="content">
           <h1 class="logo">
