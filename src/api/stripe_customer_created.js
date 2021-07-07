@@ -1,18 +1,7 @@
-const express = require("express");
-const gatsby = require("gatsby-plugin-nodejs");
-const bodyParser = require('body-parser');
+export default function handler(req, res) {
+    // res.status(200).json({ hello: `world` })
+    const event = req.body;
 
-const app = express();
-
-gatsby.prepare({ app }, () => {
-  // Here you can define your routes
-  app.get("/hello", (req, res) => {
-    res.send(`Hey, ${req.query.name || "Vsauce - Michael here"}`)
-  })
-
-  app.post('/stripe_webhook', bodyParser.raw({type: 'application/json'}), (request, response) => {
-    const event = request.body;
-  
     // Handle the event
     switch (event.type) {
       case 'payment_intent.succeeded':
@@ -31,11 +20,5 @@ gatsby.prepare({ app }, () => {
     }
   
     // Return a response to acknowledge receipt of the event
-    response.json({received: true});
-  });
-  
-});
-
-const port = process.env.PORT || 1337;
-
-app.listen(port, () => console.log(`listening on port ${port}`));
+    res.status(200).json({received: true});
+  }

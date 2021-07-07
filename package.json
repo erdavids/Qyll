@@ -9,8 +9,8 @@
   ],
   "scripts": {
     "develop": "gatsby develop",
-    "start": "concurrently \"gatsby develop\" \"node src/server/index.js\"",
-    "build": "concurrently \"gatsby build\" \"node src/server/index.js\"",
+    "start": "gatsby develop",
+    "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean"
   },
