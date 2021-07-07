@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
-    title: "KeepWriting",
+    siteUrl: "https://qyll.dev",
+    title: "Qyll",
   },
   plugins: [
     "gatsby-plugin-image",
@@ -14,7 +14,7 @@ module.exports = {
         name: "images",
         path: "./src/images/",
       },
-      __key: "images",
+      __key: "images"
     },
   ],
 };
