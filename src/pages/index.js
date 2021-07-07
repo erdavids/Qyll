@@ -32,7 +32,7 @@ const IndexPage = () => {
           <p class="description">Designed to help you write first, edit later.</p>
           <Link to="/page"><button class="try-button">Try it</button></Link>
           <br />
-          <a href="https://buy.stripe.com/aEUbJN39oajB55ScMM"><button class="try-button"></button></a>
+          {/* <a href="https://buy.stripe.com/aEUbJN39oajB55ScMM"><button class="try-button"></button></a> */}
         </div>
       </div>
     </html>
