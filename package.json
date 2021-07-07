@@ -10,7 +10,7 @@
   "scripts": {
     "develop": "gatsby develop",
     "start": "concurrently \"gatsby develop\" \"node src/server/index.js\"",
-    "build": "gatsby build",
+    "build": "concurrently \"gatsby develop\" \"node src/server/index.js\"",
     "serve": "gatsby serve",
     "clean": "gatsby clean"
   },
