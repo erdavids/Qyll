@@ -2,6 +2,8 @@ import * as React from "react"
 import {useState, useRef, useEffect} from "react"
 import { Link } from "gatsby"
 
+import Header from "../components/header"
+
 import '../styles/pageStyle.css'
 
 import Logo from "../images/Logo.png"
@@ -50,11 +52,8 @@ const Page = () => {
 
     return (
         <>
+            <Header />
             <div class="page-content">
-            <h1 class="page-logo">
-                <img class="page-logo-image" alt="Qyll logo"  src={Logo} />
-                <span class="page-logo-title">Qyll</span>
-            </h1>
             {/* <div class="page-center">
                 <p class="page-text">Set a word goal below and click 'Start Typing'.</p>
                 <p class="page-text">Everything will go away and you will have a progress bar fill up as you type.</p>

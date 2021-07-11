@@ -1,5 +1,5 @@
 ---
-slug: "/blog/qyll-v0.5"
+slug: "/blog/qyll-v0-5"
 date: 2021-07-11
 title: "Qyll v0.5"
 ---
