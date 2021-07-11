@@ -34,7 +34,7 @@ const IndexPage = () => {
           <Link to="/page"><button class="try-button">Try it</button></Link>
           {/* <Link to="/edit"><button class="try-button">Edit</button></Link> */}
           <br />
-          <Link to="/blog/what-is-qyll"><button class="read-button">What is it?</button></Link>
+          <Link to="/blog/what-is-qyll"><button class="read-button">Read more</button></Link>
           {/* <a href="https://buy.stripe.com/aEUbJN39oajB55ScMM"><button class="try-button"></button></a> */}
         </div>
       </div>

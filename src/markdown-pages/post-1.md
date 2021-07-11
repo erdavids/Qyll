@@ -8,7 +8,7 @@ In simplest form, Qyll lets you write without seeing what you have already writt
 
 You can only export your text once you reach your word count goal.
 
-That's it. [Try it out!](../page)
+That's it. [Try it out!](https://qyll.dev/page)
 
 The next question would be "Why is Qyll?"
 
