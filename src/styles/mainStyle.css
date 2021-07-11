@@ -48,13 +48,29 @@ body {
     height: 120px;
 }
 
+.progress-image {
+    vertical-align: middle;
+    width: 650px;
+}
+
 .try-button {
     border-radius: 8px;
     border: none;
     background-color: #E03857;
     color: #f1e8e3;
     height: 50px;
-    width: 140px;
+    width: 160px;
+    cursor: pointer;
+    margin-bottom: 1rem;
+}
+
+.read-button {
+    border-radius: 8px;
+    border: 2px solid #E03857;
+    background-color: #f1e8e3;
+    color: #E03857;
+    height: 50px;
+    width: 160px;
     cursor: pointer;
     margin-bottom: 1rem;
 }
@@ -64,6 +80,10 @@ body {
 }
 
 @media (max-width: 720px) {
+    p {
+        font-size: .8rem;
+    }
+    
     .qyll-title {
         font-size: 2.5rem;
         margin-left: 15px;
@@ -80,7 +100,13 @@ body {
         background-color: #E03857;
         color: #f1e8e3;
         height: 40px;
-        width: 100px;
+        width: 120px;
+        font-size: .8rem;
+    }
+
+    .read-button {
+        height: 40px;
+        width: 120px;
         font-size: .8rem;
     }
   }

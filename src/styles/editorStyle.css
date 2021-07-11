@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Solway&display=swap');
+
+
+* {
+    /* font-family: 'Virgil'; */
+    font-family: 'Solway', serif;
+    font-size: 24px;
+}
+
+.editor-parent {
+    width: 60%;
+    margin: 0 auto;
+    font-size: 12px;
+    /* color: #484848; */
+}
+

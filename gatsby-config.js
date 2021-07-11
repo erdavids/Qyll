@@ -8,6 +8,15 @@ module.exports = {
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sharp",
     "gatsby-plugin-nodejs",
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "markdown-pages",
+        path: "./src/markdown-pages",
+      },
+    },
+    "gatsby-transformer-remark",
+    "gatsby-plugin-catch-links",
     "gatsby-transformer-sharp",
     {
       resolve: "gatsby-source-filesystem",

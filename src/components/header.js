@@ -18,15 +18,21 @@ const Header = () => {
         <title>Qyll</title>
       </Helmet>
         <nav class="header">
+            <span class="page-logo">
+                <img class="page-logo-image" alt="Qyll logo"  src={Logo} />
+                <span class="page-logo-title">Qyll</span>
+            </span>
             <button class="header-button login-top-link">Try it</button>
             { !isAuthenticated() ?
                 <button onClick={login} class="hidden-button login-top-link">Sign in</button>
                 :
-                <></>
+                <button class="hidden-button login-top-link">Account</button>
+
             }
-            <button class="hidden-button login-top-link">Pricing</button>
-            <button class="hidden-button login-top-link">Features</button>
-            <button class="hidden-button login-top-link">About</button>
+            {/* <Link to="/pricing"><button class="hidden-button login-top-link">Pricing</button></Link> */}
+            <Link to="/blog/qyll-v0-5"><button class="hidden-button login-top-link">Features</button></Link>
+            <Link to="/blog"><button class="hidden-button login-top-link">Blog</button></Link>
+
         </nav>
     </html>
   )

@@ -2,11 +2,12 @@ import * as React from "react"
 import '../styles/mainStyle.css'
 import { Link } from "gatsby"
 import {Helmet} from 'react-helmet'
-import { login, logout, isAuthenticated, getProfile } from "../utils/auth"
+import { login, logout, isAuthenticated, getProfile, getUsers } from "../utils/auth"
 
 import Header from "../components/header"
 
 import Logo from "../images/Logo.png"
+import Progress from "../images/progress.png"
 
 const percentage = 66;
 
@@ -29,12 +30,15 @@ const IndexPage = () => {
             <img class="logo-image" alt="Qyll logo" src={Logo} />
             <span class="qyll-title">Qyll</span>
           </h1>
-          <p class="description">Designed to help you write first, edit later.</p>
+          <p class="description">Designed to help you actually write.</p>
           <Link to="/page"><button class="try-button">Try it</button></Link>
+          {/* <Link to="/edit"><button class="try-button">Edit</button></Link> */}
           <br />
+          <Link to="/blog/what-is-qyll"><button class="read-button">Read more</button></Link>
           {/* <a href="https://buy.stripe.com/aEUbJN39oajB55ScMM"><button class="try-button"></button></a> */}
         </div>
       </div>
+
     </html>
   )
 }

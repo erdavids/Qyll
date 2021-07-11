@@ -125,3 +125,14 @@ progress {
   progress::-moz-progress-bar {
     /* style rules */
   }
+
+  @media (max-width: 720px) {
+      .page-logo-image {
+        width: 40px;
+        height: 40px;
+      }
+
+      .page-logo-title {
+        font-size: 1rem;
+      }
+    }

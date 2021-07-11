@@ -27,6 +27,10 @@ const Page = () => {
         setValue((typed.split(' ').length - 1) / goal * 10000)
     }
 
+    const refocus = () => {
+        inputEl.current.focus();
+    }
+
     const inputEl = useRef(null);
 
     const onWritingClick = () => {
@@ -64,6 +68,7 @@ const Page = () => {
                         <h1 class="page-percent">{parseInt((typed.split(' ').length - 1) / goal * 100)}%</h1>
                         <progress class="page-progress" value={(typed.split(' ').length - 1) / goal * 10000} max={10000} />
                             <textarea
+                            onBlur={refocus}
                             class="page-word-input-hidden"
                             value={typed}
                             onChange={onTypedChange}

@@ -4,6 +4,26 @@ import { navigate } from "gatsby"
 
 const isBrowser = typeof window !== "undefined"
 
+
+// const ManagementClient = auth0.Management;;
+// const management = new ManagementClient({
+//   domain: 'thebuffed.us.auth0.com',
+//   clientId: '',
+//   clientSecret: '',
+//   scope: 'read:users update:users'
+// });
+
+// export const getUsers = () => {
+//     management.getUsers(function(err, users) {
+//         if (err) {
+//           // handle error.
+//         }
+//         console.log(users);
+//       });
+// }
+
+
+
 const auth = isBrowser
   ? new auth0.WebAuth({
       domain: process.env.GATSBY_AUTH0_DOMAIN,
@@ -14,15 +34,15 @@ const auth = isBrowser
     })
   : {}
 
-    const tokens = {
+const tokens = {
     accessToken: false,
     idToken: false,
     expiresAt: false,
-    }
+}
 
-    let user = {}
+let user = {}
 
-    export const isAuthenticated = () => {
+export const isAuthenticated = () => {
     if (!isBrowser) {
         return;
     }
@@ -36,9 +56,9 @@ const auth = isBrowser
     }
 
     auth.authorize()
-    }
+}
 
-    const setSession = (cb = () => {}) => (err, authResult) => {
+const setSession = (cb = () => {}) => (err, authResult) => {
     if (err) {
         navigate("/")
         cb()
@@ -55,26 +75,26 @@ const auth = isBrowser
         navigate("/")
         cb()
     }
-    }
+}
 
-    export const handleAuthentication = () => {
-    if (!isBrowser) {
-        return;
-    }
+export const handleAuthentication = () => {
+if (!isBrowser) {
+    return;
+}
 
-    auth.parseHash(setSession())
-    }
+auth.parseHash(setSession())
+}
 
-    export const getProfile = () => {
+export const getProfile = () => {
     return user
-    }
+}
 
-    export const silentAuth = callback => {
-        if (!isAuthenticated()) return callback()
-        auth.checkSession({}, setSession(callback))
-      }
+export const silentAuth = callback => {
+    if (!isAuthenticated()) return callback()
+    auth.checkSession({}, setSession(callback))
+}
 
-    export const logout = () => {
+export const logout = () => {
     localStorage.setItem("isLoggedIn", false)
     auth.logout()
-    }
+}
