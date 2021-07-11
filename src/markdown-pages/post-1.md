@@ -17,8 +17,6 @@ Qyll is just another tool in the fight against perfectionism. It is designed to 
 
 <br/>
 
-<br/>
-
 # Note
 
 Qyll is currently in early development and will eventually have more features designed to help writers reach their goals.
