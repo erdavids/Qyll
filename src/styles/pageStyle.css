@@ -20,6 +20,7 @@
 
 .page-text {
     margin-bottom: 1.5rem;
+    font-size: .8rem;
 }
 
 .page-logo {
@@ -46,7 +47,7 @@
 
 .page-percent {
     margin-bottom: 2rem;
-    font-size: 1.25rem;
+    font-size: 1rem;
     color: #E03857
 }
 
@@ -141,4 +142,36 @@ progress {
           width: 95%;
           margin-top: 10rem;
       }
+
+      .page-word-input {
+        border: 2px solid #E03857;
+        background-color: #f1e8e3;
+        border-radius: 5px; 
+        height: 50px;
+        width: 160px;
+        text-align: center;
+        margin-bottom: 1rem;
+        font-size: .6rem;
     }
+
+    .write-button {
+        border-radius: 5px;
+        border: 2px solid #E03857;
+        background-color: #E03857;
+        color: #f1e8e3;
+        height: 50px;
+        width: 160px;
+        font-size: .6rem;
+        margin-bottom: .5rem;
+    }
+
+    .page-text {
+        font-size: .6rem;
+    }
+
+    .page-percent {
+        margin-bottom: 1rem;
+        font-size: 1rem;
+        color: #E03857
+    }
+}

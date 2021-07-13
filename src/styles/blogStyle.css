@@ -8,6 +8,7 @@
     color: #E03857;
     margin-right: 12px;
     margin-bottom: 12px;
+    font-size: .8rem;
 }
 
 .post-link-title:hover {
@@ -16,7 +17,7 @@
 
 .post-link-date {
     color: #484848;
-    font-size: .8rem;
+    font-size: .6rem;
 }
 
 .blog-list {
@@ -35,10 +36,11 @@
 }
 
 .blog-title {
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 
 a {
+    font-size: .8rem;
     text-decoration: none;
     color: #E03857
 }
@@ -57,10 +59,10 @@ a {
     }
 
     a {
-        font-size: .8rem;
+        font-size: .6rem;
     }
 
     h1 {
-        font-size: .8rem;
+        font-size: .6rem;
     }
 }

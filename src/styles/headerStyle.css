@@ -42,6 +42,14 @@
     color: black;
 }
 
+li {
+    font-size: .8rem;
+}
+
+h1 {
+    font-size: .8rem;
+}
+
 @media (max-width: 720px) {
     .header {
         width: 95%;
@@ -72,6 +80,6 @@
     }
 
     li {
-        font-size: .8rem;
+        font-size: .6rem;
     }
 }

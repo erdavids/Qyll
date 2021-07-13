@@ -26,7 +26,7 @@ const Header = () => {
             { !isAuthenticated() ?
                 <button onClick={login} class="hidden-button login-top-link">Sign in</button>
                 :
-                <button class="hidden-button login-top-link">Account</button>
+                <button onClick={logout} class="hidden-button login-top-link">Log out</button>
 
             }
             {/* <Link to="/pricing"><button class="hidden-button login-top-link">Pricing</button></Link> */}

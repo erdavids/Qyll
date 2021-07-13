@@ -21,7 +21,7 @@ const IndexPage = ({
                 <h1 class="blog-title">The Blog.</h1>
                 <p>Thoughts on writing and Qyll development.</p>
 
-                <h1 class="blog-list">Latest Posts.</h1>
+                <h2 class="blog-list">Latest Posts.</h2>
                 <div class="blog-list">{Posts}</div>
             </div>
         </>
