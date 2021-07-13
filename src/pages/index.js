@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 import {Helmet} from 'react-helmet'
 import { login, logout, isAuthenticated, getProfile, getUsers } from "../utils/auth"
 
-import Header from "../components/main-header"
+import Header from "../components/header"
 
 import Logo from "../images/Logo.png"
 import Progress from "../images/progress.png"

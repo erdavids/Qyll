@@ -22,7 +22,7 @@ const Header = () => {
                 <Link to="/"><img class="page-logo-image" alt="Qyll logo"  src={Logo} /></Link>
                 <Link to="/"><span class="page-logo-title">Qyll</span></Link>
             </span>
-            <Link to="/page"><button class="header-button login-top-link">Try it</button></Link>
+            {/* <Link to="/page"><button class="header-button login-top-link">Try it</button></Link> */}
             { !isAuthenticated() ?
                 <button onClick={login} class="hidden-button login-top-link">Sign in</button>
                 :
