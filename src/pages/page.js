@@ -18,6 +18,8 @@ const Page = () => {
     const [goalReached, setGoalReached] = useState(false)
     const [goal, setGoal] = useState(0)
 
+    const [buttonTitle, setButtonTitle] = useState("Copy Text")
+
     const [typed, setTyped] = useState("");
 
     const onChange = (event) => {
@@ -41,6 +43,10 @@ const Page = () => {
             setGoal(parseInt(text))
         }
         // inputEl.current.focus();
+    }
+
+    const onCopyClick = () => {
+
     }
 
     useEffect(() => {
@@ -78,7 +84,7 @@ const Page = () => {
                             typed.split(' ').length - 1 >= goal ?
                             <>
                             <p class="page-text">You did it! Keep writing or use one of the options below to export your text.</p>
-                            <button class="write-button" onClick={() => {navigator.clipboard.writeText(typed)}}>Copy Text</button>
+                            <button class="write-button" onClick={() => {navigator.clipboard.writeText(typed); setButtonTitle("Copied!")}}>{buttonTitle}</button>
                             {/* <button class="write-button" onClick={() => {navigator.clipboard.writeText(typed)}}>Copy Text</button> */}
 
 
