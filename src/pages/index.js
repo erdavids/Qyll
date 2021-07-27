@@ -2,16 +2,12 @@ import * as React from "react"
 import '../styles/mainStyle.css'
 import { Link } from "gatsby"
 import {Helmet} from 'react-helmet'
-import { login, logout, isAuthenticated, getProfile, getUsers } from "../utils/auth"
 
 import Header from "../components/header"
 
 import Logo from "../images/Logo.png"
 import Progress from "../images/progress.png"
-
-const percentage = 66;
-
-
+import WriterImage from "../images/Qyll-Crop.png"
 
 const IndexPage = () => {
 
@@ -23,19 +19,25 @@ const IndexPage = () => {
         <title>Qyll</title>
       </Helmet>
       <Header />
-      {/* <p>Debugging but oh well {process.env.AUTH0_DOMAIN}</p> */}
       <div class="fullStyle">
         <div class="content">
-          <h1 class="logo">
-            <img class="logo-image" alt="Qyll logo" src={Logo} />
-            <span class="qyll-title">Qyll</span>
-          </h1>
-          <p class="description">Designed to help you actually write.</p>
-          <Link to="/page"><button class="try-button">Try it</button></Link>
-          {/* <Link to="/edit"><button class="try-button">Edit</button></Link> */}
-          <br />
-          <Link to="/blog/what-is-qyll"><button class="read-button">Read more</button></Link>
-          {/* <a href="https://buy.stripe.com/aEUbJN39oajB55ScMM"><button class="try-button"></button></a> */}
+
+          <div class="flex-grid-container">
+            <div class="flex-col">
+              <h1 class="action-statement">Reach your writing goals.</h1>
+              <p class="app-description">Qyll will help you finish your first draft
+instead of rewriting the first page... again.</p>
+
+              <div class="app-buttons">
+                <Link to="/page"><button class="try-button">Try It</button></Link>
+                {/* <Link to="/edit"><button class="try-button">Edit</button></Link> */}
+                <br />
+                <Link to="/blog/what-is-qyll"><button class="read-button">Desktop App</button></Link>
+              </div>
+              
+            </div>
+            <div class="flex-col"><img class="writer-image" alt="Woman writing with a quill" src={WriterImage} /></div>
+          </div>
         </div>
       </div>
 

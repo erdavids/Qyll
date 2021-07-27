@@ -2,7 +2,6 @@ import * as React from "react"
 import '../styles/headerStyle.css'
 import { Link } from "gatsby"
 import {Helmet} from 'react-helmet'
-import { login, logout, isAuthenticated, getProfile } from "../utils/auth"
 
 import Logo from "../images/Logo.png"
 
@@ -22,13 +21,7 @@ const Header = () => {
                 <Link to="/"><img class="page-logo-image" alt="Qyll logo"  src={Logo} /></Link>
                 <Link to="/"><span class="page-logo-title">Qyll</span></Link>
             </span>
-            {/* <Link to="/page"><button class="header-button login-top-link">Try it</button></Link> */}
-            { !isAuthenticated() ?
-                <button onClick={login} class="hidden-button login-top-link">Sign in</button>
-                :
-                <button onClick={logout} class="hidden-button login-top-link">Log out</button>
-
-            }
+            <Link to="/blog/qyll-v0-5"><button class="try-button-header login-top-link">Try it</button></Link>
             {/* <Link to="/pricing"><button class="hidden-button login-top-link">Pricing</button></Link> */}
             <Link to="/blog/qyll-v0-5"><button class="hidden-button login-top-link">Features</button></Link>
             <Link to="/blog"><button class="hidden-button login-top-link">Blog</button></Link>

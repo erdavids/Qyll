@@ -1,9 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Solway&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Solway&display=swap');
+ */
 
 @font-face {
-    font-family: Virgil;
-    src: url('../fonts/Virgil.woff2');
-}
+    font-family: Solway;
+    src: url('../fonts/Solway-Regular.ttf') format('truetype');
+  }
 
 * {
     /* font-family: 'Virgil'; */

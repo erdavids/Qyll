@@ -2,7 +2,6 @@ import * as React from "react"
 import '../styles/pricingStyle.css'
 import { Link } from "gatsby"
 import {Helmet} from 'react-helmet'
-import { login, logout, isAuthenticated, getProfile, getUsers } from "../utils/auth"
 
 import Header from "../components/header"
 

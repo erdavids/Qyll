@@ -3,8 +3,6 @@ import {useState, useRef, useEffect} from "react"
 import { createEditor } from "slate";
 import { Slate, Editable, withReact } from "slate-react";
 import '../styles/editorStyle.css'
-import { useQuill } from 'react-quilljs';
-import 'react-quill/dist/quill.snow.css';
 
 import {Editor, EditorState} from 'draft-js';
 import 'draft-js/dist/Draft.css';
@@ -14,7 +12,6 @@ const percentage = 66;
 
 
 const Edit = () => {
-    const { quill, quillRef } = useQuill();
     const [value, setValue] = useState([
         {
         type: "paragraph",
