@@ -32,7 +32,7 @@ instead of rewriting the first page... again.</p>
                 <Link to="/page"><button class="try-button">Try It</button></Link>
                 {/* <Link to="/edit"><button class="try-button">Edit</button></Link> */}
                 <br />
-                <Link to="/blog/what-is-qyll"><button class="read-button">Desktop App</button></Link>
+                <Link to="https://thebuffed.gumroad.com/l/qyll-writing"><button class="read-button">Desktop App</button></Link>
               </div>
               
             </div>
