@@ -21,7 +21,7 @@ const Header = () => {
                 <Link to="/"><img class="page-logo-image" alt="Qyll logo"  src={Logo} /></Link>
                 <Link to="/"><span class="page-logo-title">Qyll</span></Link>
             </span>
-            <Link to="/blog/qyll-v0-5"><button class="try-button-header login-top-link">Try it</button></Link>
+            <Link to="/page"><button class="try-button-header login-top-link">Try it</button></Link>
             {/* <Link to="/pricing"><button class="hidden-button login-top-link">Pricing</button></Link> */}
             <Link to="/blog/qyll-v0-5"><button class="hidden-button login-top-link">Features</button></Link>
             <Link to="/blog"><button class="hidden-button login-top-link">Blog</button></Link>
