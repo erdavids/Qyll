@@ -28,7 +28,6 @@ const IndexPage = () => {
               <p class="app-description">Qyll will help you finish your first draft
 instead of rewriting the first page... again.</p>
               <p class="app-description">Most writers get stuck in an endless cycle of editing. Using Qyll, you can't edit what you've written until you hit your word goal.</p>
-
               <div class="app-buttons">
                 <Link to="/page"><button class="try-button">Try It</button></Link>
                 {/* <Link to="/edit"><button class="try-button">Edit</button></Link> */}
