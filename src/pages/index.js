@@ -24,7 +24,8 @@ const IndexPage = () => {
 
           <div class="flex-grid-container">
             <div class="flex-col">
-              <h1 class="action-statement">Reach your writing goals.</h1>
+              <h1 class="action-statement">Finish your book</h1>
+              <h1 class="action-statement">with Qyll.</h1>
               <p class="app-description">Qyll will help you finish your first draft
 instead of rewriting the first page... again.</p>
               <p class="app-description">Most writers get stuck in an endless cycle of editing. Using Qyll, you can't edit what you've written until you hit your word goal.</p>
@@ -32,7 +33,7 @@ instead of rewriting the first page... again.</p>
                 <Link to="/page"><button class="try-button">Try It</button></Link>
                 {/* <Link to="/edit"><button class="try-button">Edit</button></Link> */}
                 <br />
-                <a href="https://thebuffed.gumroad.com/l/qyll-writing"><button class="read-button">Desktop App</button></a>
+                <a href="https://thebuffed.gumroad.com/l/qyll-writing"><button class="read-button">Buy for $15</button></a>
               </div>
               
             </div>

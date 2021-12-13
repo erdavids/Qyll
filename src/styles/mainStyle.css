@@ -121,7 +121,10 @@ p {
   
   /* Front page copy */
   .action-statement {
-      font-size: 1.25rem;
+      font-size: 3rem;
+      margin-top: 0;
+      margin-bottom: 0;
+      padding: 0;
       color:#E03857;
   }
 
@@ -209,11 +212,6 @@ p {
         box-sizing: border-box;
       }
 
-
-      .action-statement {
-        font-size: .8rem;
-        color:#E03857;
-    }
       .app-description {
         font-size: .6rem;
         color: #484848;
